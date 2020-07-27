@@ -46,7 +46,7 @@ export default (state = initialState, action) => {
       const currentQty = selectedCartItem.quantity;
       let updatedCartItems;
       if (currentQty > 1) {
-        // need to reduce it, not erase it
+       
         const updatedCartItem = new CartItem(
           selectedCartItem.quantity - 1,
           selectedCartItem.productPrice,
